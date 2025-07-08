@@ -48,6 +48,7 @@ form div input {
 .navigasi {
   display: flex;
   gap: 20px;
+  color: black;
 }
 
 .navigasi a {
