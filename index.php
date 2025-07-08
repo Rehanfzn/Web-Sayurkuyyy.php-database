@@ -11,10 +11,9 @@
 
     <main>
     <h1>HALO SELAMAT DATANG DI WEBSITE KAMI</h1>
-    <h2>SAYUR KU</h2>
+    <h2>SAYUR KUYYY</h2>
     <P>sayur segar dan fresh</P>
-
-    <main>
+    </main>
     
      <?php include "layout/footer.html" ?> 
 </body>
