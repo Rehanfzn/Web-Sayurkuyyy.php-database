@@ -22,23 +22,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="sayur.css" />
+    <link rel="stylesheet" href="style/login.css" />
 </head>
 <body>
     <?php include "layout/header.html" ?> 
 
+    <div class="container">
     <h3>Masuk akun</h3>
-    <form action="login.php" method="POST">
-        <div>
-            <label for="username">Username</label>
-            <input type="text" placeholder="username" name="username"/>
-        </div>
+        <form action="login.php" method="POST">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" placeholder="username" name="username"/>
+            </div>
         <div>
             <label for="password">Password</label>
             <input type="password" placeholder="password" name="password"/>
         </div>
         <button type="submit" name="login"> Masuk sekarang </button>
     </form>
+    </div>
     
      <?php include "layout/footer.html" ?> 
 </body>
