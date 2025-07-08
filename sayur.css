@@ -1,0 +1,58 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    height:80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #f8f9fa;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div label {
+    font-size: medium;
+    font-weight: bold;
+}
+
+form div input {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.kaki{
+    color: blue;
+}
+
+
+.navigasi {
+  display: flex;
+  gap: 20px;
+}
+
+.navigasi a {
+    color: black; 
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none; 
+}
