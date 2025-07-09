@@ -2,16 +2,15 @@
   include "service/database.php";
 
   if(isset($_POST["register"])){
-    $username = $_POST['username'];
-    $password = $_POST['password']; 
+    $username = mysqli_real_escape_string($db, $_POST['username']);
+    $password = $_POST['password'];  
 
-    $sql = "INSERT INTO users (username, password) VALUES
-   ('$username','$password')";
+    $sql = "INSERT INTO users (username, password) VALUES ('$username','$password')";
   
     if($db->query($sql)) {
-        echo "Data kamu terverivikasi";
+        echo "Data kamu terverifikasi";
     }else {
-        echo "Data kamu tidak terverivikasi";
+        echo "Data kamu tidak terverifikasi: " . $db->error;
     }
   }
 ?>
@@ -29,16 +28,16 @@
 
     <div class="container">
     <h3>Daftar akun</h3>
-        <form action="login.php" method="POST">
+        <form action="" method="POST">
             <div>
                 <label for="username">Username</label>
-                <input type="text" placeholder="username" name="username"/>
+                <input type="text" placeholder="username" name="username" required/>
             </div>
         <div>
             <label for="password">Password</label>
-            <input type="password" placeholder="password" name="password"/>
+            <input type="password" placeholder="password" name="password" required/>
         </div>
-        <button type="submit" name="login"> Masuk sekarang </button>
+        <button type="submit" name="register"> Daftar sekarang </button>
     </form>
     </div>
     
